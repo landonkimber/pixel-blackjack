@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_draw_card",
+  "%Name":"scr_card_array_push",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_draw_card",
+  "name":"scr_card_array_push",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

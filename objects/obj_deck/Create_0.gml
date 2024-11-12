@@ -14,7 +14,8 @@ for (var i = 0; i < array_length(suits); i++) {
             suit: suits[i],
             rank: ranks[j],
             color: (i < 2) ? "red" : "blue",
-            value: min(j + 1, 10)
+            value: min(j + 1, 10),
+			facingUp: true
         };
         ds_list_add(global.deck, card);
     }
