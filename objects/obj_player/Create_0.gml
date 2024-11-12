@@ -3,5 +3,7 @@
 
 
 global.player_cards = [];
+global.player_id = "player";
+
 
 previous_card_count = array_length(global.player_cards);
