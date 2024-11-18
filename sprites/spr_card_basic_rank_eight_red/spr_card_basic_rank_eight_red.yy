@@ -23,7 +23,7 @@
   ],
   "name":"spr_card_basic_rank_eight_red",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"spr_card",
     "path":"folders/Sprites/spr_card.yy",
@@ -50,7 +50,7 @@
     "eventStubScript":null,
     "eventToFunction":{},
     "length":1.0,
-    "lockOrigin":false,
+    "lockOrigin":true,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
       "Keyframes":[],
@@ -75,8 +75,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":23,
+    "yorigin":31,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
