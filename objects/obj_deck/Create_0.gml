@@ -6,15 +6,16 @@ global.card_index = 0;
 
 global.deck = ds_list_create();
 suits = ["hearts", "diamonds", "clubs", "spades"];
-ranks = ["ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"];
+ranks = [ "ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"];
 
 for (var i = 0; i < array_length(suits); i++) {
     for (var j = 0; j < array_length(ranks); j++) {
+		var calcValue = (j == 0) ? 11 : min(j + 1, 10);
         var card = {
             suit: suits[i],
             rank: ranks[j],
             color: (i < 2) ? "red" : "blue",
-            value: min(j + 1, 10),
+            value: calcValue,
 			facingUp: true
         };
         ds_list_add(global.deck, card);

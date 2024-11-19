@@ -19,5 +19,6 @@ if ( current_card_count != previous_card_count) {
 
 
 if (keyboard_check_pressed(ord("P"))) {
-	show_debug_message("[ ] global.player_cards"+string(global.player_cards))
+	show_debug_message("[ ] global.player_cards"+string(global.player1_cards));
+	show_debug_message("Player hand count : " + string(global.player1_hand_count));
 }

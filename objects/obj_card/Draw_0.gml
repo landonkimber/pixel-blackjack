@@ -1,8 +1,4 @@
 
-show_debug_message("Drawing card at: " + string(x) + ", " + string(y) + "   : TYPES : x:" + typeof(x) + " y:" + typeof(y));
-show_debug_message("Card data: " + string(card));
-
-
 //Sprites on all cards!!
 if(card.facingUp){
 	draw_sprite(spr_card_basic_bg, image_index, real(x), real(y));

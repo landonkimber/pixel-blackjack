@@ -4,6 +4,9 @@
 // Takes an array, either global.player/dealer_cards, pushes a card from global.deck array into player/dealer.
 
 // Params( array_to_push, card_object, x, y, facingUpBoolean )
+
+// 11-18-2024 - NOTE - This script might be unnecessary. Will look into just implementing this code into scr_deal_card 
+
 function scr_card_array_push(pushArray, cardObject, x, y, facingUpBoolean) {
 	
     if (!is_real(x) || !is_real(y)) {
