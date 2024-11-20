@@ -17,9 +17,14 @@ function scr_card_array_push(pushArray, cardObject, x, y, facingUpBoolean) {
 	
 	array_push(pushArray, cardObject);
 	
-	 var new_card = instance_create_layer(x, y, "Instances", obj_card);
+	var roomMiddleX = room_width / 2;
+	
+	var new_card = instance_create_layer(roomMiddleX, 0, "Instances", obj_card);
 	 
-	 show_debug_message("Final position check - x: " + string(new_card.x) + " y: " + string(new_card.y));
+	show_debug_message("Final position check - x: " + string(new_card.x) + " y: " + string(new_card.y));
+	 
+	new_card.target_x = x;
+    new_card.target_y = y;
 	 
 	 new_card.card = cardObject;
 	

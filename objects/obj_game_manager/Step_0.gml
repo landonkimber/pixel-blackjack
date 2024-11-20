@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.game_ticks += 1;
-
 if(keyboard_check_pressed(ord("T"))){
     show_debug_message("global_game_ticks = " + string(global.game_ticks));
 }

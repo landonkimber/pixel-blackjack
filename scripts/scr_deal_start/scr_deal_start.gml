@@ -6,17 +6,27 @@
 // 11-18-2024 - NOTE - This will control how the cards are dealt at the start of each round.  
 // 11-18-2024 - TODO - Add animations. 
 function scr_deal_start( playerNumber, playerIds){
+	/*
 	show_debug_message("player number : " + string(playerNumber));
     for (var i = 0; i < array_length(playerIds); i++) {
         show_debug_message("Index " + string(i) + ": " + string(playerIds[i]));
     }
+	*/
 	
 	for (var i = 0; i < array_length(playerIds); i++) {
+		
 		scr_deal_card(playerIds[i], global.deck[| global.card_index], true, x, y); 
+
 	}
+
 	scr_deal_card(global.dealer_id, global.deck[|global.card_index], true, x, y);
+
 	for (var i = 0; i < array_length(playerIds); i++) {
+
 		scr_deal_card(playerIds[i], global.deck[| global.card_index], true, x, y); 
+
 	}
+
 	scr_deal_card(global.dealer_id, global.deck[|global.card_index], false, x, y);
+
 }
