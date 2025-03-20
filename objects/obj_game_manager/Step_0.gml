@@ -1,8 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+global.game_ticks += 1;
 if(keyboard_check_pressed(ord("T"))){
     show_debug_message("global_game_ticks = " + string(global.game_ticks));
+}
+if(keyboard_check_pressed(ord("G"))){
+    var globalVarList = variable_instance_get_names(global);
+    show_debug_message("----GLOBAL VARS----");
+    
+    for(var i = 0; i < array_length(globalVarList); i++){
+        var varName = globalVarList[i];
+        var varValue = variable_global_get(varName);
+        
+        // Convert the value to a string for display
+        var valueString = string(varValue);
+        
+        show_debug_message(varName + " : " + valueString);
+    }
 }
 
 /*

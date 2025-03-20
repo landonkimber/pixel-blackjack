@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_deal_start",
+  "%Name":"scr_dealers_turn",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_deal_start",
+  "name":"scr_dealers_turn",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

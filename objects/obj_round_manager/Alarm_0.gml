@@ -6,11 +6,11 @@ if (alarm_index < 4) {
     switch(alarm_index) {
 		//PLAYER FIRST CARD
         case 0:
-            scr_deal_card(playersIdArray[current_player], global.deck[| global.card_index], true, x, y);
-            current_player += 1;
+            scr_deal_card(playersIdArray[global.current_player], global.deck[| global.card_index], true, x, y);
+            global.current_player += 1;
             
-            if (current_player >= array_length(playersIdArray)) {
-                current_player = 0;
+            if (global.current_player >= array_length(playersIdArray)) {
+                global.current_player = 0;
                 alarm_index += 1;
             }
             break;
@@ -18,16 +18,18 @@ if (alarm_index < 4) {
 		//DEALER FIRST CARD	
         case 1:
             scr_deal_card(global.dealer_id, global.deck[| global.card_index], true, x, y);
-            alarm_index += 1;
+            global.current_player +=1
+			alarm_index += 1;
             break;
         
 		//PLAYER SECOND CARD
         case 2: 
-            scr_deal_card(playersIdArray[current_player], global.deck[| global.card_index], true, x, y);
-            current_player += 1;
+            scr_deal_card(playersIdArray[global.current_player], global.deck[| global.card_index], true, x, y);
+            global.current_player += 1;
             
-            if (current_player >= array_length(playersIdArray)) {
-                current_player = 0;
+            if (global.current_player >= array_length(playersIdArray)) {
+				
+                global.current_player = 0;
                 alarm_index += 1;
             }
             break;
@@ -41,3 +43,5 @@ if (alarm_index < 4) {
     
     alarm[0] = 30;  
 }
+
+global.players_turn = true;
